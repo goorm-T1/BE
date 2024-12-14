@@ -12,7 +12,9 @@ import java.util.Optional;
 
 @Repository
 public interface ResidentRepo extends JpaRepository<ResidentEntity, Long> {
-    Optional<ResidentEntity> findByUnitNum(@Param("resident_id") Long unitNum);
+    ResidentEntity findByUnitNumAndBuildingNum(@Param("resident_id") Long unitNum, Long buildingNum);
+
+    ResidentEntity findByUnitNum(@Param("resident_id") Long unitNum);
 
 
     //보류
