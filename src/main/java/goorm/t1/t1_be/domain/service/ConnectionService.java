@@ -32,7 +32,7 @@ public class ConnectionService {
 
         return ConnectionResponse.builder()
                 .unitNum(residentEntity.getUnitNum())
-                .msg(residentEntity.getStateMsg())
+                .stateMsg(residentEntity.getStateMsg())
                 .stoneState(myStoneEntity.getStoneState())
                 .stoneColor(myStoneEntity.getStoneColor())
                 .stoneFace(myStoneEntity.getStoneFace())
