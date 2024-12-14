@@ -18,4 +18,8 @@ public class ResidentEntity {
     @JoinColumn(name = "building_number")
     private  AptInfoEntity aptInfoEntity;
 
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "stone_id")
+    private  MyStoneEntity myStoneEntity;
+
 }
