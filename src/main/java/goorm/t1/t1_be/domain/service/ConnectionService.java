@@ -39,6 +39,7 @@ public class ConnectionService {
                 .stoneOutline(myStoneEntity.getStoneOutline())
                 .build();
 
+
     }
 
 
