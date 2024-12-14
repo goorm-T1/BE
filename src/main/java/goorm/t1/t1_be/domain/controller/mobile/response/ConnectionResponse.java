@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class ConnectionResponse {
     private long buildingNum;
     private long unitNum;
-    private String msg;
+    private String stateMsg;
     private int stoneState;
     private int stoneColor;
     private int stoneFace;
