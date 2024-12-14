@@ -16,6 +16,7 @@ public class ResidentEntity {
 
     private String stateMsg;
 
+    private long buildingNum;
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "building_number")
 //    private  AptInfoEntity aptInfoEntity;

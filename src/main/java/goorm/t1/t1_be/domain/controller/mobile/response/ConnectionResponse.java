@@ -10,13 +10,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ResidentResponse {
+public class ConnectionResponse {
     private long buildingNum;
     private long unitNum;
     private String msg;
-    private Long stoneState;
-    private Long stoneColor;
-    private Long stoneFace;
-    private Long stoneOutline;
+    private int stoneState;
+    private int stoneColor;
+    private int stoneFace;
+    private int stoneOutline;
 
 }
