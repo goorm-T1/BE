@@ -25,6 +25,5 @@ public class SetStoneStateService {
 
         myStoneRepo.save(myStoneEntity);
 
-        System.out.println(myStoneRepo.findByStoneId(stoneId));
     }
 }
