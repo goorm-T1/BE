@@ -10,5 +10,5 @@ import org.springframework.http.HttpStatus;
 public class StoneStateUpdateException extends RuntimeException{
     private final HttpStatus status = HttpStatus.CONFLICT;
     private final int errorCode = 2;
-    private final String errorMessage ="돌의 상태가 변경되지 않았습니다.";
+    private final String errorMessage;
 }

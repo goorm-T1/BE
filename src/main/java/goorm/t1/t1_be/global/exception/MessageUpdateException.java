@@ -10,5 +10,5 @@ import org.springframework.http.HttpStatus;
 public class MessageUpdateException extends RuntimeException {
     private final HttpStatus status = HttpStatus.CONFLICT;
     private final int errorCode = 3;
-    private final String errorMessage ="상태메세지 변경에 실패했습니다.";
+    private final String errorMessage;
 }
