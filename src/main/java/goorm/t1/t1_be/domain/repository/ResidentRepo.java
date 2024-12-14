@@ -16,4 +16,5 @@ public interface ResidentRepo extends JpaRepository<ResidentEntity, Long> {
 
 
 
+
 }

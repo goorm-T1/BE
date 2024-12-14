@@ -19,5 +19,6 @@ public class StateMsgService {
 
         residentRepo.save(residentEntity);
 
+
     }
 }
