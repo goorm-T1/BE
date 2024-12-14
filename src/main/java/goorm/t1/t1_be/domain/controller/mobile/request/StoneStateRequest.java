@@ -19,4 +19,5 @@ public class StoneStateRequest {
     private int stoneOutline;
 
 
+
 }

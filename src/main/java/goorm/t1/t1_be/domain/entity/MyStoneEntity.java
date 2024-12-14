@@ -14,11 +14,8 @@ public class MyStoneEntity {
     private Long stoneId;
 
     private int stoneFace=0;
-
     private int stoneState=0;
-
     private int stoneColor=0;
-
     private int stoneOutline=0;
 
 

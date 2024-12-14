@@ -24,4 +24,5 @@ public class StoneStateController {
         setStoneStateService.setStoneState(stoneStateRequest);
         return ResponseEntity.ok().build();
     }
+
 }

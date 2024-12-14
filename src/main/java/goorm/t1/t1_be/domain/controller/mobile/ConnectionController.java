@@ -26,4 +26,5 @@ public class ConnectionController {
         ConnectionResponse connectionResponse = connectionService.getResidentInfo(connectionRequest);
         return ResponseEntity.ok(connectionResponse);
     }
+
 }
