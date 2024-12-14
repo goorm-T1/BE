@@ -9,13 +9,15 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class MyStoneEntity {
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="stone_id")
     private Long stoneId;
 
-    private Long stoneBg;
+    private Long stoneBg=0L;
 
-    private Long stoneFace;
+    private Long stoneFace=0L;
 
-    private Long stoneState;
+    private Long stoneState=0L;
+
+
 }

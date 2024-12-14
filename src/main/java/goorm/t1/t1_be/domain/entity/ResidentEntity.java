@@ -14,12 +14,16 @@ public class ResidentEntity {
     @Column(name="resident_id")
     private Long unitNum;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "building_number")
-    private  AptInfoEntity aptInfoEntity;
+    private String stateMsg;
+
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "building_number")
+//    private  AptInfoEntity aptInfoEntity;
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "stone_id")
     private  MyStoneEntity myStoneEntity;
+
+
 
 }
