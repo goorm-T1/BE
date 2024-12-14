@@ -22,9 +22,7 @@ public class SetStoneStateService {
         myStoneEntity.setStoneColor(stoneStateRequest.getStoneColor());
         myStoneEntity.setStoneFace(stoneStateRequest.getStoneFace());
         myStoneEntity.setStoneOutline(stoneStateRequest.getStoneOutline());
-
         myStoneRepo.save(myStoneEntity);
 
-        System.out.println(myStoneRepo.findByStoneId(stoneId));
     }
 }
