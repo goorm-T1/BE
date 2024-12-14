@@ -26,8 +26,9 @@ public class GetStateListService {
                     .unitNum(resident.getUnitNum())
                     .stateMsg(resident.getStateMsg())
                     .stoneColor(resident.getMyStoneEntity().getStoneColor())
-                    .stoneFace(resident.getMyStoneEntity().getStoneFace())
+                    .stoneDirection(resident.getMyStoneEntity().getStoneDirection())
                     .stoneOutline(resident.getMyStoneEntity().getStoneOutline())
+                    .stoneState(resident.getMyStoneEntity().getStoneState())
                     .build();
             stateList.add(stateListResponse);
         }

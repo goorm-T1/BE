@@ -14,10 +14,5 @@ public class StoneStateRequest {
     private Long unitNum;
     private Long buildingNum;
     private int stoneStatus;
-    private int stoneColor;
-    private int stoneFace;
-    private int stoneOutline;
-
-
 
 }

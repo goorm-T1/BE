@@ -19,9 +19,6 @@ public class SetStoneStateService {
         Long stoneId = residentRepo.findByUnitNumAndBuildingNum(stoneStateRequest.getUnitNum(),stoneStateRequest.getBuildingNum()).getMyStoneEntity().getStoneId();
         MyStoneEntity myStoneEntity = myStoneRepo.findByStoneId(stoneId);
         myStoneEntity.setStoneState(stoneStateRequest.getStoneStatus());
-        myStoneEntity.setStoneColor(stoneStateRequest.getStoneColor());
-        myStoneEntity.setStoneFace(stoneStateRequest.getStoneFace());
-        myStoneEntity.setStoneOutline(stoneStateRequest.getStoneOutline());
         myStoneRepo.save(myStoneEntity);
 
     }
