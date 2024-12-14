@@ -7,6 +7,7 @@ import goorm.t1.t1_be.domain.entity.MyStoneEntity;
 import goorm.t1.t1_be.domain.entity.ResidentEntity;
 import goorm.t1.t1_be.domain.repository.MyStoneRepo;
 import goorm.t1.t1_be.domain.repository.ResidentRepo;
+import goorm.t1.t1_be.global.exception.UnitNumNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,8 +25,11 @@ public class ConnectionService {
 
     public ConnectionResponse getResidentInfo(ConnectionRequest connectionRequest){
 
-        //residentDto | connectionDto
+
         ResidentEntity residentEntity = residentRepo.findByUnitNumAndBuildingNum(connectionRequest.getUnitNum(), connectionRequest.getBuildingNum());
+        if(residentEntity == null){
+            throw new UnitNumNotFoundException("존재하지 않는 가구입니다.");
+        }
 
         MyStoneEntity myStoneEntity = myStoneRepo.findByStoneId(residentEntity.getMyStoneEntity().getStoneId());
 
