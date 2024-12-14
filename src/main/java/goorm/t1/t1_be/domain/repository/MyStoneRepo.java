@@ -11,4 +11,7 @@ import java.util.Optional;
 @Repository
 public interface MyStoneRepo extends JpaRepository<MyStoneEntity, Long> {
     Optional<MyStoneEntity> findByStoneId(@Param("stone_id") Long stoneId);
+
 }
+
+
