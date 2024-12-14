@@ -33,11 +33,5 @@ public class ResidentService {
         return residentRepo.save(residentEntity);
     }
 
-//    @Transactional
-//    public Long fixStateMsg(request){
-//        ResidentEntity residentEntity = residentRepo.findByUnitNum(request.getUnitNum);
-//
-//        residentRepo.updateStateMsgByUnitNum(residentEntity.getUnitNum(), request.newStateMsg);
-//        return residentEntity.getUnitNum();
-//    }
+
 }

@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/mobile")
 public class ConnectionController {
 
-    private final ResidentService residentService;
     private final ConnectionService connectionService;
 
 
