@@ -7,7 +7,6 @@ import goorm.t1.t1_be.domain.entity.MyStoneEntity;
 import goorm.t1.t1_be.domain.entity.ResidentEntity;
 import goorm.t1.t1_be.domain.repository.MyStoneRepo;
 import goorm.t1.t1_be.domain.repository.ResidentRepo;
-import goorm.t1.t1_be.domain.service.dto.ResidentDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -35,10 +34,8 @@ public class ConnectionService {
                 .stateMsg(residentEntity.getStateMsg())
                 .stoneState(myStoneEntity.getStoneState())
                 .stoneColor(myStoneEntity.getStoneColor())
-                .stoneFace(myStoneEntity.getStoneFace())
+                .stoneFace(myStoneEntity.getStoneDirection())
                 .stoneOutline(myStoneEntity.getStoneOutline())
                 .build();
-
-
     }
 }
