@@ -13,8 +13,6 @@ public class MyStoneEntity {
     @Column(name="stone_id")
     private Long stoneId;
 
-    private int stoneBg=0;
-
     private int stoneFace=0;
 
     private int stoneState=0;

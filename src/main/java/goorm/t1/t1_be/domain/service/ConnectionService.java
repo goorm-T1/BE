@@ -28,8 +28,6 @@ public class ConnectionService {
         //residentDto | connectionDto
         ResidentEntity residentEntity = residentRepo.findByUnitNumAndBuildingNum(connectionRequest.getUnitNum(), connectionRequest.getBuildingNum());
 
-        //@TODO
-        // 돌멩이 가져오기
         MyStoneEntity myStoneEntity = myStoneRepo.findByStoneId(residentEntity.getMyStoneEntity().getStoneId());
 
         return ConnectionResponse.builder()

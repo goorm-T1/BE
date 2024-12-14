@@ -12,6 +12,7 @@ import java.util.Optional;
 public interface MyStoneRepo extends JpaRepository<MyStoneEntity, Long> {
     MyStoneEntity findByStoneId(@Param("stone_id") Long stoneId);
 
+
 }
 
 
